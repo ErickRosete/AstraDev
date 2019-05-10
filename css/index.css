@@ -1,0 +1,475 @@
+/* General */
+
+:root {
+    --secondary-color: #be1f27;
+    --sec-contrast-color: #6b0106;
+}
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+#intro {
+    width: 100%;
+    height: 100vh;
+    background: #000 top center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+#intro:before {
+    content: "";
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#intro .intro-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0px;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 0px;
+}
+
+#intro h1 {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0
+}
+
+#intro h1 span {
+    color: #be1f27;
+}
+
+#intro p {
+    color: #ebebeb;
+    font-weight: 300;
+    align-content: center;
+}
+
+/* About */
+
+#about hr {
+    display: block;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+#about-info {
+    margin-bottom: 2rem;
+}
+
+#about-img-cont {
+    margin-top: 1rem;
+}
+
+#about img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Specialty */
+
+#specialty-info {
+    padding: 1rem;
+}
+
+#specialty-info h3 {
+    color: gray;
+}
+
+#specialty .category-cont {
+    height: 100%
+}
+
+/* category card */
+
+#specialty .category-card {
+    transition: background-color 750ms;
+    position: relative;
+    height: 100%;
+    min-height: 20rem;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#specialty .category-card .category-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#specialty .category-card .category-info img {
+    width: 4rem;
+}
+
+#specialty .category-card .category-info p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+#specialty .category-card .category-info .title {
+    transition: color 750ms;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    max-width: 80%;
+}
+
+#specialty .category-card .category-info .info {
+    transition: opacity 500ms;
+    opacity: 0;
+    display: none;
+    color: gray;
+    max-width: 80%;
+}
+
+#specialty .category-card button {
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear, background-color 500ms;
+    height: 2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0rem;
+    border-radius: 0;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#specialty .category-card button img {
+    max-height: 50%;
+}
+
+/* hover */
+
+#specialty .category-card:hover .info, #specialty .category-card:hover button {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+#specialty .category-card:hover .title {
+    color: white;
+}
+
+#specialty .category-card:hover {
+    background-color: black;
+}
+
+/* Process */
+
+#process .proc-comp {
+    display: none
+}
+
+#process .proc-mob {
+    display: block;
+    margin: auto;
+}
+
+/* Project */
+
+.project-info {
+    border: 1px solid lightgray;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 17.5rem;
+    overflow: hidden;
+}
+
+.project-info img {
+    width: 100%;
+    height: auto
+}
+
+.project-info p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.project-hover-div {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 500ms;
+}
+
+.project-card:hover .project-hover-div {
+    opacity: 1;
+}
+
+/* Client */
+
+#client {
+    padding-bottom: 5rem;
+}
+
+#client-card-container {
+    margin: 2rem 0;
+}
+
+.client-card {
+    background-color: black;
+    padding: 1rem;
+    margin: 1px 1px;
+    min-height: 17.5rem;
+    transition: background-color 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-card:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.client-card img {
+    width: 80%;
+}
+
+/* Certifications */
+
+#certification .cert-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.cert-card img {
+    width: 2.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.cert-card .cert-text {
+    display: flex;
+    flex-direction: column
+}
+
+.cert-card .cert-text span {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.cert-card .cert-text .cert-name {
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+#main-cert-img {
+    width: 100%;
+    height: auto;
+}
+
+/* quote */
+
+section#quote {
+    padding: 2rem;
+}
+
+.quote-container .quote-content {
+    max-width: 80%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-style: italic;
+}
+
+.quote-container img {
+    border-radius: 50%;
+    display: block;
+    margin: 1rem auto;
+    width: 5rem;
+    height: 5rem;
+}
+
+.quote-container .quote-author {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.25rem;
+    color: gray;
+}
+
+/* responsive section */
+
+#responsive hr {
+    margin-left: 0;
+}
+
+#responsive p {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#responsive .img-cont {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+}
+
+/* news section */
+
+#news .news-card {
+    margin: 1px;
+    position: relative;
+    transition: opacity 250ms;
+}
+
+#news .news-card:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.news-card img {
+    width: 100%;
+    max-height: 15rem;
+}
+
+.news-card-info {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.news-card-info .timestamp {
+    color: white;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.news-card .title {
+    color: white;
+    margin-bottom: 0;
+}
+
+/* contact */
+
+#contact #contact-subtitle {
+    color: #3c3c3c;
+    margin-bottom: 2rem;
+}
+
+#contact-office, #contact-info {
+    margin: 1rem 0;
+}
+
+#contact-office p, #contact-info p {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+#contact-office p {
+    color: #3c3c3c;
+}
+
+#contact-info p {
+    color: gray;
+}
+
+#contact-office b, #contact-info b {
+    color: black;
+}
+
+#contact-office .title, #contact-info .title {
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: .5rem
+}
+
+#contact .form-group label {
+    font-size: 1.25rem;
+}
+
+/* Media Query */
+
+@media (min-width: 600px) {
+    #main-cert-img {
+        margin-top: -5rem;
+        width: 100%;
+        height: 125%;
+    }
+    .main-btn {
+        font-size: 1.5rem;
+    }
+    #intro h1 {
+        font-size: 4rem;
+    }
+    #intro p {
+        max-width: 70%;
+    }
+    #specialty-info {
+        border: 1px solid lightgray;
+    }
+    #process .proc-comp {
+        display: block;
+        margin: auto;
+    }
+    #process .proc-mob {
+        display: none;
+    }
+    .cert-card .cert-text .cert-name {
+        font-size: 3rem;
+    }
+    .cert-card .cert-text span {
+        font-size: 1.5rem;
+    }
+    .cert-card img {
+        width: 3.5rem;
+    }
+    #responsive p {
+        font-size: 3rem;
+        text-align: start;
+    }
+    .news-card-info .timestamp {
+        font-size: 1.25rem;
+    }
+}
