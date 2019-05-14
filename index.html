@@ -79,19 +79,42 @@
   </header>
   <!-- #header -->
 
+  <div id="page-nav">
+    <ul>
+      <li><a href="#intro" class="selected">
+          <div class="circle"></div>
+        </a></li>
+      <li><a href="#about">
+          <div class="circle"></div>
+        </a></li>
+      <li><a href="#specialty">
+          <div class="circle"></div>
+        </a></li>
+      <li><a href="#process">
+          <div class="circle"></div>
+        </a></li>
+      <li><a href="#project">
+          <div class="circle"></div>
+        </a></li>
+      <li><a href="#client">
+          <div class="circle"></div>
+        </a> </li>
+      <li><a href="#news">
+          <div class="circle"></div>
+        </a></li>
+    </ul>
+  </div>
   <!--==========================
     Intro Section
   ============================-->
   <section id="intro">
     <div class="intro-container wow fadeIn">
 
-      <h1><b>CREAMOS</b> VIDEOJUEGOS <span>|</span> </h1>
+      <h1><b>Creamos</b> Software <span>|</span> </h1>
 
 
       <hr class="small-line" />
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
-        Ut enim ad minim veniam </p>
+      <p> Desarrollamos páginas web, aplicaciones, sistemas personalizados y videojuegos.</p>
 
     </div>
   </section>
@@ -105,19 +128,16 @@
         <div class="row">
           <div class="col-md-7 col-12">
             <div id="about-info">
-              <h2>Somos desarrolladores web dedicados a tu proyecto</h2>
-              <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <span class="secondary-color">apasionados
-                  por
-                  los videojuegos</span>
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</h3>
+              <h2>Somos desarrolladores dedicados a tu proyecto</h2>
+              <h3>En AstraDev nos preocupamos por el
+                <span class="secondary-color">cliente </span>
+                y su proyecto.</h3>
               <hr class=small-line />
 
               <p>
-                Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt
-                mollit anim id est laborum.
+                Sabemos que cada cliente es único y en AstraDev nos tomamos cada proyecto en un nivel personal.
+                Entendemos la situación de cada cliente y proponemos la solución que mejor cumple con las necesidades de
+                él y su proyecto.
               </p>
               <button class="btn main-btn">Hablanos de tu proyecto</button>
             </div>
@@ -161,8 +181,8 @@
                     <p class="title">Software</p>
                     <p class="info">Amamos el software hemos realizado muchos proyectos</p>
                   </div>
-                  <button class="btn main-btn"><img class="img-fluid img-white" src="icons/expand-alt.svg"
-                      alt="expand" /></button>
+                  <button class="btn main-btn" data-toggle="modal" data-target="#software-modal"><img
+                      class="img-fluid img-white" src="icons/expand-alt.svg" alt="expand" /></button>
 
                 </div>
               </div>
@@ -239,6 +259,42 @@
     </section>
 
     <!--==========================
+      modals Section
+    ============================-->
+    <div class="modal" id="software-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Realizamos el software que necesitas</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Utilizamos un conjunto de tecnologías que nos permiten crear y desarrollar cualquier tipo de proyecto.
+            </p>
+            <hr class="small-line" />
+            <ul class="two-columns">
+              <li>AspNet</li>
+              <li>MongoDB</li>
+              <li>NodeJS</li>
+              <li>REACT</li>
+              <li>MySQL</li>
+              <li>AWS</li>
+              <li>HTML5/CSS</li>
+              <li>Razor</li>
+              <li>Python</li>
+              <li>C#</li>
+              <li>Servicios de la nube (API)</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button " class="btn main-btn" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--==========================
       Process Section
     ============================-->
     <section id="process">
@@ -262,6 +318,13 @@
         <h2><span class="secondary-color">|</span> Nuestros proyectos</h2>
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
           dolore magna aliqua.</h3>
+
+        <div id="filters">
+          <button class="btn filter-btn selected">Todo</button>
+          <button class="btn filter-btn">Páginas Web</button>
+          <button class="btn filter-btn">App</button>
+          <button class="btn filter-btn">Software</button>
+        </div>
 
         <div id="project-all" class="row">
           <div class="col-md-3 col-6 m-0 p-0">
@@ -639,8 +702,9 @@
   <!-- Contact Form JavaScript File
   <script src="js/contactform/contactform.js"></script> -->
 
-  <!-- Template Main Javascript File -->
+  <!-- Custom Javascript File -->
   <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

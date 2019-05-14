@@ -6,6 +6,47 @@
 }
 
 /*--------------------------------------------------------------
+# Page Nav
+--------------------------------------------------------------*/
+
+#page-nav {
+    position: fixed;
+    top: 50%;
+    right: 0.25rem;
+    transform: translate(-50%, 0);
+    z-index: 9999;
+}
+
+#page-nav li {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+#page-nav a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+#page-nav a.selected .circle, #page-nav a.selected:hover .circle {
+    width: 1rem;
+    height: 1rem;
+}
+
+#page-nav .circle {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    transition: all 300ms;
+}
+
+#page-nav a:hover .circle {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+/*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
 
@@ -87,7 +128,7 @@
 
 #about img {
     width: 100%;
-    height: 100%;
+    max-height: 80vh;
 }
 
 /* Specialty */
@@ -153,7 +194,7 @@
 
 #specialty .category-card button {
     transition: visibility 0s linear 0.5s, opacity 0.5s linear, background-color 500ms;
-    height: 2rem;
+    height: 3rem;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -185,6 +226,34 @@
     background-color: black;
 }
 
+/* Modal */
+
+.modal .modal-title {
+    color: #3c3c3c;
+}
+
+.modal .modal-body ul li {
+    font-size: 1.25rem;
+    list-style: none;
+}
+
+.modal .modal-body ul li:before {
+    content: '✓ ';
+    color: green;
+    font-weight: 900;
+}
+
+.modal .small-line {
+    margin: 3rem;
+    margin-left: 0.5rem;
+}
+
+@media (min-width: 600px) {
+    .modal-dialog {
+        max-width: 90%;
+    }
+}
+
 /* Process */
 
 #process .proc-comp {
@@ -197,6 +266,36 @@
 }
 
 /* Project */
+
+#project #filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.filter-btn {
+    background-color: white;
+    color: black;
+    border-radius: 1.5rem;
+    margin: 0.75rem;
+    min-width: 7.5rem;
+    text-transform: uppercase;
+}
+
+.filter-btn:hover, .filter-btn:focus {
+    background-color: lightgray;
+    box-shadow: 0 0 0 0;
+}
+
+.filter-btn.selected:hover {
+    background-color: var(--sec-contrast-color);
+}
+
+.filter-btn.selected {
+    background-color: var(--secondary-color);
+    color: white;
+}
 
 .project-info {
     border: 1px solid lightgray;

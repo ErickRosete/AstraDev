@@ -47,6 +47,12 @@
   background-color: #f0eeef;
 }
 
+ul.two-columns {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
 #main {
   background-color: white;
 }
@@ -129,7 +135,7 @@ h3, p {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #25e6f5;
+  background: var(--secondary-color);
   color: #fff;
   width: 40px;
   height: 40px;
@@ -146,13 +152,13 @@ h3, p {
 }
 
 .back-to-top:focus {
-  background: #7e3eff;
+  background: var(--sec-contrast-color);
   color: #fff;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #7e3eff;
+  background: var(--sec-contrast-color);
   color: #fff;
 }
 
