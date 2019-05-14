@@ -99,7 +99,16 @@
       <li><a href="#client">
           <div class="circle"></div>
         </a> </li>
+      <li><a href="#certification">
+          <div class="circle"></div>
+        </a></li>
       <li><a href="#news">
+          <div class="circle"></div>
+        </a></li>
+      <li><a href="#responsive">
+          <div class="circle"></div>
+        </a></li>
+      <li><a href="#contact">
           <div class="circle"></div>
         </a></li>
     </ul>
@@ -114,7 +123,7 @@
 
 
       <hr class="small-line" />
-      <p> Desarrollamos páginas web, aplicaciones, sistemas personalizados y videojuegos.</p>
+      <p>Astradev. Tu idea, nuestro código.</p>
 
     </div>
   </section>
@@ -160,15 +169,8 @@
               <h2><span class="secondary-color">|</span> Nuestra especialidad</h2>
               <h3>Nosotros somos expertos en aligerar tu trabajo y quitarte un peso de encima.</h3>
               <br />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-              <p>
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt
-                mollit anim id est laborum."
-              </p>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p> -->
             </div>
           </div>
           <div class="col-md-7 col-12">
@@ -178,8 +180,8 @@
                 <div class="category-card">
                   <div class="category-info">
                     <img src="img/supporters/code_icon.png" />
-                    <p class="title">Software</p>
-                    <p class="info">Amamos el software hemos realizado muchos proyectos</p>
+                    <p class="title">Sistemas</p>
+                    <p class="info">Sistemas y software a la medida</p>
                   </div>
                   <button class="btn main-btn" data-toggle="modal" data-target="#software-modal"><img
                       class="img-fluid img-white" src="icons/expand-alt.svg" alt="expand" /></button>
@@ -193,10 +195,10 @@
                   <div class="category-info">
                     <img src="img/supporters/code_icon.png" />
                     <p class="title">Aplicaciones Móviles</p>
-                    <p class="info">Amamos las aplicaciones móviles, soluciones al alcance de tu mano</p>
+                    <p class="info">Android y iOS</p>
                   </div>
-                  <button class="btn main-btn"><img class="img-fluid img-white" src="icons/expand-alt.svg"
-                      alt="expand" /></button>
+                  <button class="btn main-btn" data-toggle="modal" data-target="#app-modal">
+                    <img class="img-fluid img-white" src="icons/expand-alt.svg" alt="expand" /></button>
                 </div>
               </div>
 
@@ -206,10 +208,10 @@
                   <div class="category-info">
                     <img src="img/supporters/code_icon.png" />
                     <p class="title">Páginas Web</p>
-                    <p class="info">Amamos las páginas web son los proyectos más solicitados</p>
+                    <p class="info">Tecnologías nuevas y responsivas</p>
                   </div>
-                  <button class="btn main-btn"><img class="img-fluid img-white" src="icons/expand-alt.svg"
-                      alt="expand" /></button>
+                  <button class="btn main-btn" data-toggle="modal" data-target="#web-modal">
+                    <img class="img-fluid img-white" src="icons/expand-alt.svg" alt="expand" /></button>
                 </div>
               </div>
 
@@ -219,10 +221,10 @@
                   <div class="category-info">
                     <img src="img/supporters/code_icon.png" />
                     <p class="title">Videojuegos</p>
-                    <p class="info">Amamos los videojuegos hemos participado en competencias</p>
+                    <p class="info">Nuestra pasión</p>
                   </div>
-                  <button class="btn main-btn"><img class="img-fluid img-white" src="icons/expand-alt.svg"
-                      alt="expand" /></button>
+                  <button class="btn main-btn" data-toggle="modal" data-target="#videogame-modal">
+                    <img class="img-fluid img-white" src="icons/expand-alt.svg" alt="expand" /></button>
                 </div>
               </div>
 
@@ -232,10 +234,10 @@
                   <div class="category-info">
                     <img src="img/supporters/code_icon.png" />
                     <p class="title">Talleres</p>
-                    <p class="info">Amamos los talleres hemos realizado talleres personalizados</p>
+                    <p class="info">Generamos interés</p>
                   </div>
-                  <button class="btn main-btn"><img class="img-fluid img-white" src="icons/expand-alt.svg"
-                      alt="expand" /></button>
+                  <button class="btn main-btn" data-toggle="modal" data-target="#taller-modal"><img
+                      class="img-fluid img-white" src="icons/expand-alt.svg" alt="expand" /></button>
                 </div>
               </div>
 
@@ -245,10 +247,10 @@
                   <div class="category-info">
                     <img src="img/supporters/code_icon.png" />
                     <p class="title">Capacitaciones</p>
-                    <p class="info">Amamos las capacitaciones, ofrecemos este servicio a distinto nivel</p>
+                    <p class="info">Impartimos conocimiento</p>
                   </div>
-                  <button class="btn main-btn"><img class="img-fluid img-white" src="icons/expand-alt.svg"
-                      alt="expand" /></button>
+                  <button class="btn main-btn" data-toggle="modal" data-target="#cap-modal">
+                    <img class="img-fluid img-white" src="icons/expand-alt.svg" alt="expand" /></button>
                 </div>
               </div>
             </div>
@@ -294,15 +296,184 @@
         </div>
       </div>
     </div>
+
+    <div class="modal" id="app-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Realizamos aplicaciones móviles</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Desarrollo de aplicaciones multiplataforma con un enfoque en UX.</p>
+            <hr class="small-line" />
+            <ul>
+              <li>Android SDK</li>
+              <li>iOS Swift</li>
+              <li>Flutter</li>
+              <li>Xamarin Forms</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button " class="btn main-btn" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="web-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Realizamos páginas web</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Utilizamos un conjunto de tecnologías que nos permiten crear y desarrollar cualquier tipo de página web.
+            </p>
+            <hr class="small-line" />
+            <ul>
+              <li>REACT</li>
+              <li>AWS</li>
+              <li>HTML5/CSS</li>
+              <li>Razor</li>
+              <li>Servicios de la nube (API)</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button " class="btn main-btn" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="videogame-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Realizamos videojuegos</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Nuestra pasión por lo videojuegos se demuestra en nuestra habilidad para crearlos.
+              Nos especializamos en:</p>
+            <hr class="small-line" />
+            <ul class="two-columns">
+              <li>
+                Game Design
+                <ul>
+                  <li>Los videojuegos tienen que tener un diseño unificado a través de todas sus áreas.</li>
+                </ul>
+              </li>
+              <li>
+                Planificación
+                <ul>
+                  <li>Todo videojuego es un proyecto y debe de estar planificado para cumplir en tiempo y recursos los
+                    objetivos.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Desarrollo
+                <ul>
+                  <li>El area principal de Astradev. Creamos codigo funcional en base al diseño de todas las áreas.
+                  </li>
+                </ul>
+              </li>
+              <li>Unity</li>
+              <li>Java</li>
+              <li>Corona SDK</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button " class="btn main-btn" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="modal" id="taller-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Impartimos talleres de calidad</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Hemos dado los siguientes talleres</p>
+            <hr class="small-line" />
+            <ul>
+              <li>
+                Creando la experiencia ideal
+                <ul>
+                  <li>Congreso Render 2019</li>
+                </ul>
+              </li>
+              <li>
+                Game Design 101
+                <ul>
+                  <li>Congreso Render 2019
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button " class="btn main-btn" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="cap-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Hacemos capacitaciones a la medida</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Contamos con expertos en el área de desarrollo. Algunas capacitaciones que hemos dado contienen los temas
+              de:
+            </p>
+            <hr class="small-line" />
+            <ul class="two-columns">
+              <li>SCRUM</li>
+              <li>UX</li>
+              <li>Buenas practicas de programacion</li>
+              <li>Desarrollo Web (C#)</li>
+              <li>Desarrollo móvil (Xamarin Forms)</li>
+              <li>Android avanzado</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button " class="btn main-btn" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--==========================
       Process Section
     ============================-->
     <section id="process">
       <div class="container">
         <h2><span class="secondary-color">|</span> Nuestro proceso</h2>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.</h3>
-        <div>
+        <h3>En Astradev, nos importa mucho el tiempo que toma cada proyecto, desde la primera junta hasta la entrega
+          oficial. Siguiendo metodologías ágiles de desarrollo, hemos normalizado este proceso para brindar un mejor
+          servicio a nuestros clientes.</h3>
+        <div class="img-cont">
           <img src="img/landing/proceso.png" class="img-fluid proc-comp" />
           <img src="img/landing/proc-mob-1.png" class="img-fluid proc-mob" />
           <img src="img/landing/proc-mob-2.png" class="img-fluid proc-mob" />
@@ -316,21 +487,32 @@
     <section id="project" class="black-sect">
       <div class="container">
         <h2><span class="secondary-color">|</span> Nuestros proyectos</h2>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.</h3>
+        <h3>Cada proyecto es una experiencia para nosotros. </h3>
 
-        <div id="filters">
+        <!-- <div id="filters">
           <button class="btn filter-btn selected">Todo</button>
           <button class="btn filter-btn">Páginas Web</button>
           <button class="btn filter-btn">App</button>
           <button class="btn filter-btn">Software</button>
-        </div>
+        </div> -->
 
         <div id="project-all" class="row">
           <div class="col-md-3 col-6 m-0 p-0">
+            <a href="views/fiestaMagica.html">
+              <div class="project-card">
+                <div class="project-info">
+                  <p>Fiesta Mágica</p>
+                  <img src="img/gray-placeholder.png" />
+                </div>
+                <div class="project-hover-div">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-6 m-0 p-0">
             <div class="project-card">
               <div class="project-info">
-                <p>Proyecto</p>
+                <p>Epsilon Computadoras</p>
                 <img src="img/gray-placeholder.png" />
               </div>
               <div class="project-hover-div">
@@ -340,7 +522,7 @@
           <div class="col-md-3 col-6 m-0 p-0">
             <div class="project-card">
               <div class="project-info">
-                <p>Proyecto</p>
+                <p>Realidad Zero</p>
                 <img src="img/gray-placeholder.png" />
               </div>
               <div class="project-hover-div">
@@ -350,7 +532,7 @@
           <div class="col-md-3 col-6 m-0 p-0">
             <div class="project-card">
               <div class="project-info">
-                <p>Proyecto</p>
+                <p>Congreso Render</p>
                 <img src="img/gray-placeholder.png" />
               </div>
               <div class="project-hover-div">
@@ -360,7 +542,7 @@
           <div class="col-md-3 col-6 m-0 p-0">
             <div class="project-card">
               <div class="project-info">
-                <p>Proyecto</p>
+                <p>GymApp</p>
                 <img src="img/gray-placeholder.png" />
               </div>
               <div class="project-hover-div">
@@ -370,7 +552,7 @@
           <div class="col-md-3 col-6 m-0 p-0">
             <div class="project-card">
               <div class="project-info">
-                <p>Proyecto</p>
+                <p>Project Noir</p>
                 <img src="img/gray-placeholder.png" />
               </div>
               <div class="project-hover-div">
@@ -380,27 +562,7 @@
           <div class="col-md-3 col-6 m-0 p-0">
             <div class="project-card">
               <div class="project-info">
-                <p>Proyecto</p>
-                <img src="img/gray-placeholder.png" />
-              </div>
-              <div class="project-hover-div">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-6 m-0 p-0">
-            <div class="project-card">
-              <div class="project-info">
-                <p>Proyecto</p>
-                <img src="img/gray-placeholder.png" />
-              </div>
-              <div class="project-hover-div">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-6 m-0 p-0">
-            <div class="project-card">
-              <div class="project-info">
-                <p>Proyecto</p>
+                <p>Dulce Hogar</p>
                 <img src="img/gray-placeholder.png" />
               </div>
               <div class="project-hover-div">
@@ -452,33 +614,9 @@
         <div class="row">
           <div class="col-md-8 col-12">
             <h2>Certificaciones</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-              id
-              est laborum.</p>
+            <p>Astradev siempre está en busca de mejorar y aprender. Esto nos ha llevado a obtener las siguientes
+              certificaciones y reconocimientos:</p>
             <div class="row justify-content-center">
-              <div class="col-md-4 col-6">
-                <div class="cert-card">
-                  <img src="img/supporters/code_icon.png" alt="cert" />
-                  <div class="cert-text">
-                    <span class="cert-name">CMM</span>
-                    <span>DEV/3</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-6">
-                <div class="cert-card">
-                  <img src="img/supporters/code_icon.png" alt="cert" />
-                  <div class="cert-text">
-                    <span class="cert-name">68+</span>
-                    <span>Clientes Felices</span>
-                  </div>
-                </div>
-              </div>
               <div class="col-md-4 col-6">
                 <div class="cert-card">
                   <img src="img/supporters/code_icon.png" alt="cert" />
@@ -500,13 +638,55 @@
     <!--==========================
       Quote Section
     ============================-->
-    <section id="quote">
+    <!-- <section id="quote">
       <div class="quote-container" id="quote-1">
         <p class="quote-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam"</p>
         <img src="img/gray-placeholder.png" />
         <p class="quote-author">Eduardo Martinez / VIP Market / Manager</p>
+      </div>
+    </section> -->
+    <!--==========================
+      News Section
+    ============================-->
+    <section id="news">
+      <div class="container">
+        <h2><span class="secondary-color">|</span>Noticias</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam</p>
+        <div class="row">
+          <div class="col-12 col-md-6 m-0 p-0">
+            <div class="news-card">
+              <img class="img-fluid" src="img/placeholder.png" alt="news" />
+              <div class="news-card-info">
+                <p class="timestamp"><span class="secondary-color">4 de mayo de 2019</span> / Eduardo Peña</p>
+                <p class="title">Entrevista a Astradev</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 m-0 p-0">
+            <div class="news-card">
+              <img class="img-fluid" src="img/placeholder.png" alt="news" />
+              <div class="news-card-info">
+                <p class="timestamp"><span class="secondary-color">9 de noviembre de 2019</span> / Eduardo Peña</p>
+                <p class="title">Concurso de Gamacon</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 m-0 p-0">
+            <div class="news-card">
+              <img class="img-fluid" src="img/placeholder.png" alt="news" />
+              <div class="news-card-info">
+                <p class="timestamp"><span class="secondary-color">27 de enero de 2019</span> / Eduardo Peña</p>
+                <p class="title">Global Game Jam 2019</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -527,58 +707,6 @@
           <div class="col-md-5 col-12">
             <div class="img-cont">
               <img class="img-fluid" src="img/landing/resp-sect.png" alt="tablet and cellphone" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--==========================
-      Responsive Section
-    ============================-->
-    <section id="news">
-      <div class="container">
-        <h2><span class="secondary-color">|</span>Noticias</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam</p>
-        <div class="row">
-          <div class="col-12 col-md-6 m-0 p-0">
-            <div class="news-card">
-              <img class="img-fluid" src="img/placeholder.png" alt="news" />
-              <div class="news-card-info">
-                <p class="timestamp"><span class="secondary-color">Noviembre 12, 2019</span> / Eduardo Peña</p>
-                <p class="title">Proximamente en GamaCon</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 m-0 p-0">
-            <div class="news-card">
-              <img class="img-fluid" src="img/placeholder.png" alt="news" />
-              <div class="news-card-info">
-                <p class="timestamp"><span class="secondary-color">Noviembre 12, 2019</span> / Eduardo Peña</p>
-                <p class="title">Estreno Estelar de Videojuego</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 m-0 p-0">
-            <div class="news-card">
-              <img class="img-fluid" src="img/placeholder.png" alt="news" />
-              <div class="news-card-info">
-                <p class="timestamp"><span class="secondary-color">Noviembre 12, 2019</span> / Eduardo Peña</p>
-                <p class="title">Proximamente en E3</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 m-0 p-0">
-            <div class="news-card">
-              <img class="img-fluid" src="img/placeholder.png" alt="news" />
-              <div class="news-card-info">
-                <p class="timestamp"><span class="secondary-color">Noviembre 12, 2019</span> / Eduardo Peña</p>
-                <p class="title">Estreno Estelar de Videojuego</p>
-              </div>
             </div>
           </div>
         </div>
@@ -651,38 +779,33 @@
   <footer id="footer">
 
     <div class="container">
-      <div id="nav-footer">
-        <ul>
-          <li><a href="#intro">Home</a></li>
-          <li><a href="#about">Nosotros</a></li>
-          <li><a href="#specialty">Especialidad</a></li>
-          <li><a href="#process">Procesos</a></li>
-          <li><a href="#project">Proyectos</a></li>
-          <li><a href="#client">Clientes</a></li>
-          <li><a href="#news">Noticias</a></li>
-        </ul>
+      <div style="display: flex; flex-direction:column">
+        <div id="nav-footer">
+          <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#specialty">Especialidad</a></li>
+            <li><a href="#process">Procesos</a></li>
+            <li><a href="#project">Proyectos</a></li>
+            <li><a href="#client">Clientes</a></li>
+            <li><a href="#news">Noticias</a></li>
+          </ul>
+        </div>
+        <div class="social-links">
+          <a href="https://www.facebook.com/astradev/" target="_blank" class="facebook">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/astradev/" target="_blank" class="instagram">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
       </div>
-
-      <div class="row">
-        <div class="col-8">
-          <div id="footer-form">
+      <img id="footer-logo" src="img/logo/astra_red.png" alt="logo">
+      <!-- <div id="footer-form">
             <input type="email" id="footer-form-email" placeholder="Correo Electrónico">
             <small>¿Quieres saber más información? Envía tu correo electrónico y nosotros nos pondremos en
               contacto.</small>
-          </div>
-        </div>
-        <div class="col-4">
-          <img id="footer-logo" src="img/logo/astra_red.png" alt="logo">
-          <div class="social-links">
-            <a href="https://www.facebook.com/astradev/" target="_blank" class="facebook">
-              <i class="fa fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/astradev/" target="_blank" class="instagram">
-              <i class="fa fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+          </div> -->
     </div>
   </footer> <!-- #footer -->
 

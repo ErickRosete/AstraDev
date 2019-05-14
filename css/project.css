@@ -1,0 +1,23 @@
+#return-link {
+    position: fixed;
+    top: 10%;
+    left: 2rem;
+    color: white;
+}
+
+#return-link:hover {
+    color: gray
+}
+
+#intro {
+    background-color: black;
+    min-height: 100vh;
+}
+
+#intro .title {
+    position: absolute;
+    top: 50%;
+    left: 10rem;
+    color: white;
+    font-size: 4rem;
+}

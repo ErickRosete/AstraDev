@@ -11,11 +11,9 @@ $(function () {
         if (scrollComplete) {
             scrollComplete = false;
             //Calculate next position
-            const height = $(window).height();
-            const currentScroll = $(window).scrollTop();
-            const currentScreen = Math.trunc((currentScroll + 70) / height);
             const delta = Math.sign(event.deltaY); // -1 -> up | 1 -> down
-            const nextPos = (currentScreen + delta) * height - 70;
+            const currentScreen = Math.round(($(window).scrollTop() + 70) / $(window).height());
+            const nextPos = (currentScreen + delta) * $(window).height() - 70;
 
             //animate
             $('html, body').animate({ scrollTop: nextPos }, 750, 'easeInOutExpo', () => {
@@ -25,13 +23,24 @@ $(function () {
     }, { passive: false });
 
     $("#page-nav a").click(function () {
-        $("#page-nav a.selected").removeClass("selected");
+        // $("#page-nav a.selected").removeClass("selected");
         const selected = $(this);
-        selected.addClass("selected");
+        // selected.addClass("selected");
         const aid = selected.attr("href");
         const nextPos = $(aid).offset().top - 70;
         $('html,body').animate({ scrollTop: nextPos }, 750, 'easeInOutExpo');
 
+    });
+    $(window).scroll(function () {
+        //right nav
+        const currentScreen = Math.round(($(window).scrollTop() + 70) / $(window).height());
+        const pageNavArray = $("#page-nav a");
+        pageNavArray.removeClass("selected");
+        $(pageNavArray[currentScreen]).addClass("selected");
+        const aid = $(pageNavArray[currentScreen]).attr("href");
+        //main navbar
+        $(".nav-menu li.menu-active").removeClass("menu-active");
+        $(`.nav-menu a[href="${aid}"]`).closest("li").addClass("menu-active")
     });
 });
 
