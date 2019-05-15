@@ -2,22 +2,127 @@
     position: fixed;
     top: 10%;
     left: 2rem;
-    color: white;
+    z-index: 1000;
+    color: lightgray;
 }
 
 #return-link:hover {
     color: gray
 }
 
-#intro {
+#project-intro {
     background-color: black;
     min-height: 100vh;
+    padding: 0;
 }
 
-#intro .title {
-    position: absolute;
-    top: 50%;
-    left: 10rem;
+#project-intro .intro-info {
+    position: relative;
+    margin: 1rem;
+    /* margin-top: -3rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-intro .intro-info .title {
+    text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2.25rem;
+    letter-spacing: .4rem;
     color: white;
-    font-size: 4rem;
+}
+
+#project-intro .intro-info hr {
+    margin: 2rem auto;
+}
+
+#project-intro .intro-info .category {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: initial;
+    color: white;
+}
+
+#project-intro .intro-info button {
+    text-transform: initial;
+    font-weight: 500;
+    font-size: 1.15rem;
+    letter-spacing: 0.1rem;
+    position: relative;
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+#project-intro .intro-img {
+    margin-top: 70px;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#project-info {
+    min-height: 0;
+}
+
+#project-info .inf-cont {
+    display: flex;
+    flex-wrap: wrap
+}
+
+#project-info h2 {
+    font-size: 1.75rem;
+}
+
+#project-info p {
+    color: gray;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+#project-info .inf {
+    margin: 1rem;
+}
+
+#project-info .inf:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 900px) {
+    #project-info .inf {
+        margin-left: 0;
+        margin-right: 3rem;
+        max-width: 50%;
+    }
+    #project-intro .intro-info {
+        align-items: flex-start;
+        position: absolute;
+        top: 7rem;
+        left: 7.5rem;
+        max-width: 50%;
+        z-index: 100;
+    }
+    #project-intro .intro-info .title {
+        text-align: left;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+    #project-intro .intro-info hr {
+        margin-bottom: 5rem;
+        margin-left: 0;
+    }
+    #project-intro .intro-img {
+        margin-top: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        height: 100vh;
+    }
 }

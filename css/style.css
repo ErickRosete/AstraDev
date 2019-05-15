@@ -118,6 +118,16 @@ h3, p {
   visibility: hidden;
 }
 
+.gray-on-hover img{
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.gray-on-hover img:hover{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
 /* Preloader */
 
 #preloader {

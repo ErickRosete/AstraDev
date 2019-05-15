@@ -281,6 +281,10 @@
 
 /* Project */
 
+#project .container {
+    margin-top: 2rem;
+}
+
 #project #filters {
     display: flex;
     justify-content: center;
@@ -322,7 +326,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    max-height: 13.5rem;
     overflow: hidden;
 }
 
