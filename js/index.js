@@ -1,4 +1,6 @@
 $(function () {
+    const topSpace = 40;
+
     $("#project .filter-btn").click(function () {
         $(".filter-btn.selected").removeClass("selected");
         const selectedBtn = $(this);
@@ -12,8 +14,8 @@ $(function () {
             scrollComplete = false;
             //Calculate next position
             const delta = Math.sign(event.deltaY); // -1 -> up | 1 -> down
-            const currentScreen = Math.round(($(window).scrollTop() + 70) / $(window).height());
-            const nextPos = (currentScreen + delta) * $(window).height() - 70;
+            const currentScreen = Math.round(($(window).scrollTop() + topSpace) / $(window).height());
+            const nextPos = (currentScreen + delta) * $(window).height() - topSpace;
 
             //animate
             $('html, body').animate({ scrollTop: nextPos }, 2000, 'easeInOutExpo', () => {
@@ -27,13 +29,13 @@ $(function () {
         const selected = $(this);
         // selected.addClass("selected");
         const aid = selected.attr("href");
-        const nextPos = $(aid).offset().top - 70;
+        const nextPos = $(aid).offset().top - topSpace;
         $('html,body').animate({ scrollTop: nextPos }, 750, 'easeInOutExpo');
 
     });
     $(window).scroll(function () {
         //right nav
-        const currentScreen = Math.round(($(window).scrollTop() + 70) / $(window).height());
+        const currentScreen = Math.round(($(window).scrollTop() + topSpace) / $(window).height());
         const pageNavArray = $("#page-nav a");
         pageNavArray.removeClass("selected");
         $(pageNavArray[currentScreen]).addClass("selected");
