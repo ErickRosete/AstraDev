@@ -124,7 +124,7 @@
 
 
       <hr class="small-line" />
-      <p>AstraDev. Tu idea, nuestro código.</p>
+      <p><span class="secondary-color">AstraDev.</span> Tu idea, nuestro código.</p>
 
     </div>
   </section>
@@ -144,10 +144,10 @@
                 y su proyecto.</h3>
               <hr class=small-line />
 
-              <p>
-                Sabemos que cada cliente es único y en AstraDev nos tomamos cada proyecto en un nivel personal.
-                Entendemos la situación de cada cliente y proponemos la solución que mejor cumple con las necesidades de
-                él y su proyecto.
+              <p>Sabemos que cada cliente es único y en AstraDev nos tomamos cada proyecto en un nivel personal.
+                <span class="d-md-block d-none">Entendemos la situación de cada cliente y proponemos la solución que
+                  mejor cumple con las necesidades de
+                  él y su proyecto.</span>
               </p>
               <a href="#contact">
                 <button class="btn main-btn">Hablanos de tu proyecto</button>
@@ -155,7 +155,7 @@
 
             </div>
           </div>
-          <div class="col-md-5 col-12">
+          <div class="col-md-5 col-12 d-none d-md-block">
             <img src="img/placeholder.png" alt="placeholder" />
           </div>
         </div>
@@ -165,7 +165,7 @@
     <!--==========================
       Specialty Section
     ============================-->
-    <section id="specialty">
+    <section id="specialty" class="two-mb-screens">
       <div class="container">
         <div class="row">
           <div class="col-md-5 col-12 m-0 p-0">
@@ -368,32 +368,34 @@
             <p>Nuestra pasión por lo videojuegos se demuestra en nuestra habilidad para crearlos.
               Nos especializamos en:</p>
             <hr class="small-line" />
-            <ul class="two-columns">
-              <li>
-                Game Design
+            <div style="display:flex; justify-content: space-around; flex-wrap: nowrap">
+              <div>
+                <b>Nuestros engines:</b>
+                <ul>
+                  <li>Unity</li>
+                  <li>Java</li>
+                  <li>Corona SDK</li>
+                </ul>
+              </div>
+              <div style="max-width:60%">
+                <b>Game Design</b>
                 <ul>
                   <li>Los videojuegos tienen que tener un diseño unificado a través de todas sus áreas.</li>
                 </ul>
-              </li>
-              <li>
-                Planificación
+                <b>Planificación</b>
                 <ul>
                   <li>Todo videojuego es un proyecto y debe de estar planificado para cumplir en tiempo y recursos los
                     objetivos.
                   </li>
                 </ul>
-              </li>
-              <li>
-                Desarrollo
+                <b>Desarrollo</b>
                 <ul>
                   <li>El area principal de AstraDev. Creamos codigo funcional en base al diseño de todas las áreas.
                   </li>
                 </ul>
-              </li>
-              <li>Unity</li>
-              <li>Java</li>
-              <li>Corona SDK</li>
-            </ul>
+              </div>
+            </div>
+
           </div>
           <div class="modal-footer">
             <button type="button " class="btn main-btn" data-dismiss="modal">Cerrar</button>
@@ -479,8 +481,8 @@
           servicio a nuestros clientes.</h3>
         <div class="img-cont">
           <img src="img/landing/proceso.png" class="img-fluid proc-comp" />
-          <img src="img/landing/proc-mob-1.png" class="img-fluid proc-mob" />
-          <img src="img/landing/proc-mob-2.png" class="img-fluid proc-mob" />
+          <img src="img/landing/proc-mob-1.png" class="img-fluid proc-mob d-none" />
+          <img src="img/landing/proc-mob-2.png" class="img-fluid proc-mob d-none" />
         </div>
       </div>
     </section>
@@ -545,7 +547,7 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3 col-6 m-0 p-0">
+          <div class="col-md-3 col-6 m-0 p-0 d-md-block d-none">
             <a href="views/gymApp.html">
               <div class="project-card">
                 <div class="project-info">
@@ -556,7 +558,7 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3 col-6 m-0 p-0">
+          <div class="col-md-3 col-6 m-0 p-0 d-md-block d-none">
             <a href="views/projectNoir.html">
               <div class="project-card">
                 <div class="project-info">
@@ -568,7 +570,7 @@
             </a>
 
           </div>
-          <div class="col-md-3 col-6 m-0 p-0">
+          <div class="col-md-3 col-6 m-0 p-0 d-md-block d-none">
             <a href="views/dulceHogar.html">
               <div class="project-card">
                 <div class="project-info">
@@ -579,7 +581,7 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3 col-6 m-0 p-0">
+          <div class="col-md-3 col-6 m-0 p-0 d-md-block d-none">
             <a href="views/brandFY.html">
               <div class="project-card">
                 <div class="project-info">
@@ -618,7 +620,7 @@
           </div>
           <div class="col-md-3 col-6 p-0">
             <div class="client-card">
-              <img src="img/logo/astra_white.png" alt="client-logo" />
+              <img src="img/landing/BrandFYLogo.png" alt="client-logo" />
             </div>
           </div>
         </div>
@@ -647,7 +649,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-12">
+          <div class="col-md-4 col-12 d-md-block d-none">
             <img id="main-cert-img" src="img/gray-placeholder.png" alt="certifications" />
           </div>
         </div>
@@ -693,7 +695,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6 m-0 p-0">
+          <div class="col-12 col-md-6 m-0 p-0 d-md-block d-none">
             <div class="news-card">
               <img class="img-fluid" src="img/placeholder.png" alt="news" />
               <div class="news-card-info">
@@ -723,7 +725,7 @@
               </button>
             </a>
           </div>
-          <div class="col-md-5 col-12">
+          <div class="col-md-5 col-12 d-md-block d-none">
             <div class="img-cont">
               <img class="img-fluid" src="img/landing/resp-sect.png" alt="tablet and cellphone" />
             </div>
@@ -741,7 +743,7 @@
           <div class="col-md-4 col-12">
             <h2><span class="secondary-color">|</span>Contáctanos</h2>
             <p id="contact-subtitle">Cuéntanos tu proyecto, estamos ansiosos por trabajar contigo.</p>
-            <div id="contact-office">
+            <div id="contact-office" class="d-md-block d-none">
               <p class="title"><b>Oficinas</b></p>
               <p>Calle A y, Avenida Sebastián Lerdo de Tejada #368.</p>
               <p>Mexicali, Baja California, 21100.</p>
@@ -750,7 +752,7 @@
               <p class="title"><b>Contáctanos</b></p>
               <p><b>T. </b> +52 686 192 0186</p>
               <p><b>FB. </b><a href="https://www.facebook.com/AstraDeve/" target="_blank" class="facebook">
-                  AstraDeve</a></p>
+                  AstraDev</a></p>
               <p><b>C. </b> contacto@astradev.co</p>
             </div>
           </div>
@@ -822,7 +824,7 @@
           </a>
         </div>
       </div>
-      <img id="footer-logo" src="img/logo/astra_red.png" alt="logo">
+      <img id="footer-logo" src="img/logo/astra_white_red.png" alt="logo">
       <!-- <div id="footer-form">
             <input type="email" id="footer-form-email" placeholder="Correo Electrónico">
             <small>¿Quieres saber más información? Envía tu correo electrónico y nosotros nos pondremos en

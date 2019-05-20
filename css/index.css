@@ -10,8 +10,13 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
+    /* min-height: 100vh; */
 }
+
+/* .two-mb-screens {
+    min-height: 200vh;
+} */
 
 /*--------------------------------------------------------------
 # Page Nav
@@ -131,8 +136,12 @@ section {
     margin-left: 0;
 }
 
-#about-info {
+/* #about-info {
     margin-bottom: 2rem;
+} */
+
+#about-info p {
+    font-size: 1.1rem;
 }
 
 #about img {
@@ -161,7 +170,7 @@ section {
     transition: background-color 750ms;
     position: relative;
     height: 100%;
-    min-height: 17.5rem;
+    min-height: 14rem;
     border: 1px solid lightgray;
     display: flex;
     flex-direction: column;
@@ -244,8 +253,8 @@ section {
     color: #3c3c3c;
 }
 
-.modal .modal-body ul li {
-    font-size: 1.25rem;
+.modal .modal-body ul li, .modal .modal-body b {
+    font-size: 1.05rem;
     list-style: none;
 }
 
@@ -256,7 +265,8 @@ section {
 }
 
 .modal .small-line {
-    margin: 3rem;
+    margin: 1rem;
+    margin-top: 0;
     margin-left: 0.5rem;
 }
 
@@ -360,9 +370,9 @@ section {
 
 /* Client */
 
-#client {
+/* #client {
     padding-bottom: 5rem;
-}
+} */
 
 #client-card-container {
     margin: 2rem 0;
@@ -372,7 +382,8 @@ section {
     background-color: black;
     padding: 1rem;
     margin: 1px 1px;
-    min-height: 10rem;
+    height: 99%;
+    min-height: 8rem;
     transition: background-color 500ms;
     display: flex;
     justify-content: center;
@@ -503,7 +514,7 @@ section#quote {
 
 .news-card img {
     width: 100%;
-    max-height: 12.5rem;
+    max-height: 10rem;
 }
 
 .news-card-info {
@@ -567,7 +578,8 @@ section#quote {
 }
 
 #contact .form-group label {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 /* Media Query */
@@ -575,6 +587,10 @@ section#quote {
 @media (min-width: 600px) {
     section {
         padding: 0;
+        min-height: 100vh;
+    }
+    .two-mb-screens {
+        min-height: 100vh;
     }
     #page-nav {
         display: block;
@@ -592,6 +608,9 @@ section#quote {
     }
     #intro p {
         max-width: 70%;
+    }
+    #about-info p {
+        font-size: 1.3rem;
     }
     #specialty-info {
         border: 1px solid lightgray;
@@ -621,5 +640,14 @@ section#quote {
     }
     .news-card-info .timestamp {
         font-size: 1.25rem;
+    }
+    #contact .form-group label {
+        font-size: 1.25rem;
+    }
+    .modal .modal-body ul li, .modal .modal-body b {
+        font-size: 1.25rem;
+    }
+    .modal .small-line {
+        margin: 3rem;
     }
 }
