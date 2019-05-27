@@ -331,8 +331,32 @@ h3, p {
 /* Nav Meu Container */
 
 #nav-menu-container {
+  display: flex;
   float: right;
   margin: 0;
+  margin-right: 1rem;
+}
+
+#language-select {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(202, 206, 221, 0.8);
+  font-family: "Josefin sans";
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+#language-select option {
+  background-color: black;
+  padding: 0.5rem;
+}
+
+#language-select option:hover {
+  background-color: transparent;
+}
+
+#language-select option:checked {
+  background: var(--secondary-color);
 }
 
 /* Nav Meu Styling */
@@ -562,6 +586,16 @@ h3, p {
   position: fixed;
   background: #000;
   display: none;
+}
+
+#mobile-nav #language-select {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 10px 22px 10px 15px;
+  width: 100%;
+  display: block;
 }
 
 /* Mobile Nav body classes */

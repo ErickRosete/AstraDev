@@ -1,5 +1,11 @@
 {
-    "date": "Date",
-    "save": "Save",
-    "cancel": "Cancel"
+    "nav": {
+        "intro": "Home",
+        "about": "About",
+        "specialty": "Specialty",
+        "process": "Processes",
+        "project": "Projects",
+        "client": "Clients",
+        "news": "News"
+    }
 }

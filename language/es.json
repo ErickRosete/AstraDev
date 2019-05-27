@@ -1,5 +1,11 @@
 {
-    "date": "Date",
-    "save": "Save",
-    "cancel": "Cancel"
+    "nav": {
+        "intro": "Inicio",
+        "about": "Nosotros",
+        "specialty": "Especialidad",
+        "process": "Procesos",
+        "project": "Proyectos",
+        "client": "Clientes",
+        "news": "Noticias"
+    }
 }
