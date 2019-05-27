@@ -29,7 +29,7 @@ $(function () {
         }
     }
     // Scroll in mobile device
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 1000) {
         // let ts;
         // window.addEventListener("touchstart", e => {
         //     ts = e.touches[0].clientY;

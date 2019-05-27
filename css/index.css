@@ -584,6 +584,12 @@ section#quote {
 
 /* Media Query */
 
+@media (min-width: 1000px) {
+    #page-nav {
+        display: block;
+    }
+}
+
 @media (min-width: 600px) {
     section {
         padding: 0;
@@ -591,9 +597,6 @@ section#quote {
     }
     .two-mb-screens {
         min-height: 100vh;
-    }
-    #page-nav {
-        display: block;
     }
     #main-cert-img {
         margin-top: -5rem;
