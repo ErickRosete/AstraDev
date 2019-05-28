@@ -7,5 +7,55 @@
         "project": "Proyectos",
         "client": "Clientes",
         "news": "Noticias"
+    },
+    "intro": {
+        "title": "<b>Creamos</b> Software <span>|</span>",
+        "subtitle": "<span class='secondary-color'>AstraDev.</span> Tu idea, nuestro código."
+    },
+    "about": {
+        "title": "Somos desarrolladores dedicados a tu proyecto",
+        "subtitle": "En AstraDev nos preocupamos por el <span class='secondary-color'> cliente </span> y su proyecto.",
+        "description": "Sabemos que cada cliente es único y en AstraDev nos tomamos cada proyecto en un nivel personal.<span class='d-md-block d-none'>Entendemos la situación de cada cliente y proponemos la solución que mejor cumple con las necesidades de él y su proyecto.</span>",
+        "button": "Hablanos de tu proyecto"
+    },
+    "specialty": {
+        "title": "<span class='secondary-color'>|</span> Nuestra especialidad",
+        "subtitle": "Nosotros somos expertos en aligerar tu trabajo y quitarte un peso de encima."
+    },
+    "categories": {
+        "software": {
+            "title": "Sistemas",
+            "info": "Sistemas y software a la medida"
+        },
+        "mobile": {
+            "title": "Aplicaciones Móviles",
+            "info": "Android y iOS"
+        },
+        "website": {
+            "title": "Páginas Web",
+            "info": "Tecnologías nuevas y responsivas"
+        },
+        "videogame": {
+            "title": "Videojuegos",
+            "info": "Nuestra pasión"
+        },
+        "workshop": {
+            "title": "Talleres",
+            "info": "Generamos interés"
+        },
+        "training": {
+            "title": "Capacitaciones",
+            "info": "Impartimos conocimiento"
+        }
+    },
+    "modals": {
+        "software": {
+            "title": "Realizamos el software que necesitas",
+            "body": "Utilizamos un conjunto de tecnologías que nos permiten crear y desarrollar cualquier tipo de proyecto."
+        }
+    },
+    "process": {
+        "title": "<span class='secondary-color'>|</span> Nuestro proceso",
+        "subtitle": "En AstraDev, nos importa mucho el tiempo que toma cada proyecto, desde la primera junta hasta la entrega oficial. Siguiendo metodologías ágiles de desarrollo, hemos normalizado este proceso para brindar un mejor servicio a nuestros clientes."
     }
 }

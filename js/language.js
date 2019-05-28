@@ -19,23 +19,28 @@ $(document).ready(function () {
         });
     }
 
-    function ipLookUp() {
-        $.ajax('http://ip-api.com/json')
-            .then(
-                function success(response) {
-                    if (response.countryCode.toUpperCase() == 'MX') {
-                        setLanguage("es")
-                    }
-                    else {
+    function languageLookUp() {
+        const navLang = navigator.language.split('-')[0].toLowerCase();
+        if (navLang == 'es') {
+            setLanguage('es');
+        } else {
+            $.ajax('http://ip-api.com/json')
+                .then(
+                    function success(response) {
+                        if (response.countryCode.toLowerCase() == 'mx') {
+                            setLanguage("es")
+                        }
+                        else {
+                            setLanguage("en")
+                        }
+                    },
+
+                    function fail(data, status) {
+                        console.log('Request failed.  Returned status of', status);
                         setLanguage("en")
                     }
-                },
-
-                function fail(data, status) {
-                    console.log('Request failed.  Returned status of', status);
-                    setLanguage("en")
-                }
-            );
+                );
+        }
     }
 
     function populateText(language) {
@@ -43,12 +48,32 @@ $(document).ready(function () {
         for (let name in language.nav) {
             $(`.nav-menu #${name}-link`).html(language.nav[name]);
         }
-
+        //populate intro
+        for (let name in language.intro) {
+            $(`#intro #intro-${name}`).html(language.intro[name]);
+        }
+        //populate about
+        for (let name in language.about) {
+            $(`#about #about-${name}`).html(language.about[name]);
+        }
+        //populate specialty
+        for (let name in language.specialty) {
+            $(`#specialty #specialty-${name}`).html(language.specialty[name]);
+        }
+        for (let categoryName in language.categories) {
+            for (let name in language.categories[categoryName]) {
+                $(`#specialty #${categoryName}-category .${name}`).html(language.categories[categoryName][name]);
+            }
+        }
+        //populate process
+        for (let name in language.process) {
+            $(`#process #process-${name}`).html(language.process[name]);
+        }
     }
 
     //document ready 
     if (localStorage.getItem('language') == null) {
-        ipLookUp();
+        languageLookUp();
     } else {
         getLanguage();
     }

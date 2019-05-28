@@ -7,5 +7,49 @@
         "project": "Projects",
         "client": "Clients",
         "news": "News"
+    },
+    "intro": {
+        "title": "<b>We develop</b> Software <span>|</span>",
+        "subtitle": "<span class='secondary-color'>AstraDev.</span> Your idea, our code."
+    },
+    "about": {
+        "title": "We are developers dedicated to your project",
+        "subtitle": "In AstraDev we care for our<span class='secondary-color'> client </span> and his project.",
+        "description": "We know that every client is unique and we take each project to a personal level.<span class='d-md-block d-none'>We understand the client's situation and we propose the best solution that fits his business needs.</span>",
+        "button": "Tell us about your project"
+    },
+    "specialty": {
+        "title": "<span class='secondary-color'>|</span> Our specialty",
+        "subtitle": "We are experts in relieving stress from your shoulders and making your job easier."
+    },
+    "categories": {
+        "software": {
+            "title": "Systems",
+            "info": "Custom-developed software and systems"
+        },
+        "mobile": {
+            "title": "Mobile Applications",
+            "info": "Android y iOS"
+        },
+        "website": {
+            "title": "Websites",
+            "info": "New technologies and responsive design"
+        },
+        "videogame": {
+            "title": "Videogames",
+            "info": "Our passion"
+        },
+        "workshop": {
+            "title": "Workshops",
+            "info": "We generate interest"
+        },
+        "training": {
+            "title": "Trainings",
+            "info": "We convey knowledge"
+        }
+    },
+    "process": {
+        "title": "<span class='secondary-color'>|</span> Our process",
+        "subtitle": "In AstraDev, we care about each project delivery time, since the first meeting until the official delivery. Following the Agile Development Methodology, we have standardized this process to give the best possible service to our clients."
     }
 }
