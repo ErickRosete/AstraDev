@@ -51,5 +51,48 @@
     "process": {
         "title": "<span class='secondary-color'>|</span> Our process",
         "subtitle": "In AstraDev, we care about each project delivery time, since the first meeting until the official delivery. Following the Agile Development Methodology, we have standardized this process to give the best possible service to our clients."
+    },
+    "project": {
+        "title": "<span class='secondary-color'>|</span> Our projects",
+        "subtitle": "Each project is a new experience."
+    },
+    "client": "<span class='secondary-color'>|</span> Satisfied clients",
+    "certification": {
+        "title": "Certifications",
+        "description": "Astradev is always searching for continuous learning and improvement. This has taken us to obtain the following certifications and awards:"
+    },
+    "news": "<span class='secondary-color'>|</span>News",
+    "newsCards": [
+        {
+            "date": "May 4, 2019",
+            "title": "Astradev's Interview"
+        },
+        {
+            "date": "November 9, 2019",
+            "title": "Gamacon Contest"
+        },
+        {
+            "date": "January 27, 2019",
+            "title": "Global Game Jam 2019"
+        }
+    ],
+    "responsive": {
+        "title": "Responsive website",
+        "subtitle": "Adapted to all mobile devices",
+        "button": "contact us"
+    },
+    "contact": {
+        "title": "<span class='secondary-color'>|</span>Contact us",
+        "subtitle": "Tell us about your project, we are eager to work with you.",
+        "officeTitle": "Offices",
+        "infoTitle": "Contact us"
+    },
+    "contactForm": {
+        "name": "Complete Name",
+        "money": "Budgetary Limit",
+        "email": "Email",
+        "service": "Required Service",
+        "project": "Tell us about your project",
+        "button": "Send Message"
     }
 }

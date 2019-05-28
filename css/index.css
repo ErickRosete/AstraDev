@@ -574,7 +574,8 @@ section#quote {
 #contact-office .title, #contact-info .title {
     color: black;
     text-transform: uppercase;
-    margin-bottom: .5rem
+    margin-bottom: .5rem;
+    font-weight: bold;
 }
 
 #contact .form-group label {

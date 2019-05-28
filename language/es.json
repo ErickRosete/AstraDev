@@ -57,5 +57,48 @@
     "process": {
         "title": "<span class='secondary-color'>|</span> Nuestro proceso",
         "subtitle": "En AstraDev, nos importa mucho el tiempo que toma cada proyecto, desde la primera junta hasta la entrega oficial. Siguiendo metodologías ágiles de desarrollo, hemos normalizado este proceso para brindar un mejor servicio a nuestros clientes."
+    },
+    "project": {
+        "title": "<span class='secondary-color'>|</span> Nuestros proyectos",
+        "subtitle": "Cada proyecto es una experiencia para nosotros."
+    },
+    "client": "<span class='secondary-color'>|</span> Clientes satisfechos",
+    "certification": {
+        "title": "Certificaciones",
+        "description": "AstraDev siempre está en busca de mejorar y aprender. Esto nos ha llevado a obtener las siguientes certificaciones y reconocimientos:"
+    },
+    "news": "<span class='secondary-color'>|</span>Noticias",
+    "newsCards": [
+        {
+            "date": "4 de mayo de 2019",
+            "title": "Entrevista a AstraDev"
+        },
+        {
+            "date": "9 de noviembre de 2019",
+            "title": "Concurso de Gamacon"
+        },
+        {
+            "date": "27 de enero de 2019",
+            "title": "Global Game Jam 2019"
+        }
+    ],
+    "responsive": {
+        "title": "Páginas web responsivas",
+        "subtitle": "Adaptadas a todos los dispositivos moviles",
+        "button": "contáctanos"
+    },
+    "contact": {
+        "title": "<span class='secondary-color'>|</span>Contáctanos",
+        "subtitle": "Cuéntanos tu proyecto, estamos ansiosos por trabajar contigo.",
+        "officeTitle": "Oficinas",
+        "infoTitle": "Contáctanos"
+    },
+    "contactForm": {
+        "name": "Nombre completo",
+        "money": "Tope presupuestario",
+        "email": "Email",
+        "service": "Servicio que requiere",
+        "project": "Cuéntanos de tu proyecto",
+        "button": "Enviar Mensaje"
     }
 }

@@ -44,9 +44,10 @@ $(document).ready(function () {
     }
 
     function populateText(language) {
-        //populate nav-menu
+        //populate nav-menu and nav-footer
         for (let name in language.nav) {
             $(`.nav-menu #${name}-link`).html(language.nav[name]);
+            $(`#nav-footer #${name}-flink`).html(language.nav[name]);
         }
         //populate intro
         for (let name in language.intro) {
@@ -60,14 +61,46 @@ $(document).ready(function () {
         for (let name in language.specialty) {
             $(`#specialty #specialty-${name}`).html(language.specialty[name]);
         }
+        //specialty-categories
         for (let categoryName in language.categories) {
             for (let name in language.categories[categoryName]) {
                 $(`#specialty #${categoryName}-category .${name}`).html(language.categories[categoryName][name]);
             }
         }
+        //populate project
+        for (let name in language.project) {
+            $(`#project #project-${name}`).html(language.project[name]);
+        }
         //populate process
         for (let name in language.process) {
             $(`#process #process-${name}`).html(language.process[name]);
+        }
+        //populate client
+        $(`#client #client-title`).html(language.client);
+        //populate certification
+        for (let name in language.certification) {
+            $(`#certification #certification-${name}`).html(language.certification[name]);
+        }
+        //populate news
+        $(`#news #news-title`).html(language.news);
+        //news-card
+        for (let index in language.newsCards) {
+            const newsCardHtml = $('#news .news-card')[index];
+            for (let name in language.newsCards[index]) {
+                newsCardHtml.getElementsByClassName(name)[0].innerHTML = language.newsCards[index][name];
+            }
+        }
+        //populate responsive
+        for (let name in language.responsive) {
+            $(`#responsive #responsive-${name}`).html(language.responsive[name]);
+        }
+        //populate contact
+        for (let name in language.contact) {
+            $(`#contact #contact-${name}`).html(language.contact[name]);
+        }
+        //contact-form
+        for (let name in language.contactForm) {
+            $(`#contactForm #contactForm-${name}`).html(language.contactForm[name]);
         }
     }
 

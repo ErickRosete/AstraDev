@@ -684,7 +684,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   max-width: 11rem;
   width: 100%;
   display: block;
-  margin: auto;
+  margin-left: auto;
 }
 
 #footer .social-links {
